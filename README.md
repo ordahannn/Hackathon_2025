@@ -1,6 +1,6 @@
 # MokedView
 
-*Moked View* is a real-time analytics dashboard designed for municipal support centers.
+**Moked View** is a real-time analytics dashboard designed for municipal support centers.
 It provides management and department heads with clear, actionable insights into service performance using real-time data, employee metrics, and visual trends.
 The system was developed during a hackathon for the Emek Hefer Regional Council.
 
@@ -36,11 +36,11 @@ It helps identify bottlenecks, track SLA compliance, and recognize top-performin
 
 ## Main Features
 
-- KPI Cards: Total tickets, SLA compliance, avg. handling time
-- Graphs: Monthly trends, SLA breakdowns, ticket volumes
-- Employee Dashboard: Individual performance and ranking
-- Department Filtering: By date, department, and sub-department
-- Extensible: Easy to plug in real data sources in place of CSV
+- **KPI Cards:** Total tickets, SLA compliance, avg. handling time
+- **Graphs:** Monthly trends, SLA breakdowns, ticket volumes
+- **Employee Dashboard:** Individual performance and ranking
+- **Department Filtering:** By date, department, and sub-department
+- **Extensible:** Easy to plug in real data sources in place of CSV
 
 ## Notes
 - The dataset used in this demo is a mocked version based on real formats.
