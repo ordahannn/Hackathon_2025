@@ -6,7 +6,7 @@ It provides clear, interactive dashboards to support decision-making for departm
 
 ---
 
-## 🎯 Project Goals
+## Project Goals
 - Provide **real-time insights** into the volume and status of service requests.
 - Present **clear and actionable** insights from service request data.
 - Identify **performance trends** across departments, sub-departments, and employees.
@@ -16,7 +16,7 @@ It provides clear, interactive dashboards to support decision-making for departm
 
 ---
 
-## 📊 Main Features
+## Main Features
 - **Central Dashboard**:
   - Total number of requests in a selected date range.
   - Percentage of on-time vs. overdue requests.
@@ -36,7 +36,7 @@ It provides clear, interactive dashboards to support decision-making for departm
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 **Frontend:**
 - React
 - Tailwind CSS
@@ -51,40 +51,6 @@ It provides clear, interactive dashboards to support decision-making for departm
 **Data:**
 - CSV dataset from the regional council’s contact center (anonymized for privacy).
   
----
-
-## 📂 Project Structure
-```
-
-Hackathon/
-├── mokedViewServer/
-│ ├── api/
-│ ├── data/
-│ └── processing
-├── public/ 
-├── src/ 
-│ ├── components/ 
-│ ├── pages/ 
-│ ├── services/ 
-│ └── App.jsx 
-├── index.html
-├── package.json
-├── package-lock.json 
-├── postcss.config.js 
-├── tailwind.config.js 
-├── vite.config.js 
-└── README.md 
-
-```
-
----
-
-## 📌 Usage
-- Open the frontend in your browser.
-- Use filters to select department, sub-department, and date range.
-- View KPIs, charts, and employee performance tables.
-- Switch between dashboards for organization-wide and employee-specific insights.
-
 ---
 
 ## 👥 Hackathon Team
