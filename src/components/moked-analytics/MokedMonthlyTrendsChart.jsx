@@ -8,17 +8,6 @@ import { getMonthlyTicketsAndOverdues } from "../../api";
 const USE_TODAY = false;
 const DEMO_END_DATE = '2025-02-28';
 
-// Function to generate the date range for the last six months
-const getHalfYearRange = () => {
-  const end = USE_TODAY ? new Date() : new Date(DEMO_END_DATE);
-  const start = new Date(end);
-  start.setMonth(end.getMonth() - 5);
-  return {
-    startDate: start.toISOString().slice(0, 10),
-    endDate: end.toISOString().slice(0, 10),
-  };
-};
-
 const MokedMonthlyTicketsChart = () => {
   const [data, setData] = useState([]);
 
