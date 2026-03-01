@@ -15,7 +15,7 @@ It provides clear, interactive dashboards to support decision-making for departm
 
 ---
 
-## Pages
+## Screens
 - **Main Dashboard**
 
   <img width="1920" height="959" alt="image" src="https://github.com/user-attachments/assets/567c6c6e-14e9-4965-b9f4-6c5fbc47189b" />
