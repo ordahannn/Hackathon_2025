@@ -70,14 +70,18 @@ It provides clear, interactive dashboards to support decision-making for departm
 ## 📂 Project Structure
 
 ```
-MokedView/
-├── client/               # React frontend
-│   ├── src/
-│   │   ├── components/   # Dashboard components and charts
-│   │   └── pages/        # Central & Employee dashboards
-├── server/               # Flask backend
-│   ├── app.py            # API routes
-│   └── data/             # CSV data files
+Hackathon_2025/
+├── mokedViewServer/          # Flask backend (API + data processing)
+├── public/                   # Static assets
+├── src/
+│   ├── components/
+│   ├── pages/
+│   │   ├── MokedMainDashboard.jsx
+│   │   ├── DepartmentDetails.jsx
+│   │   └── PredictHighTickets.jsx
+│   ├── App.jsx
+│   ├── api.js
+│   └── main.jsx
 └── README.md
 ```
 
