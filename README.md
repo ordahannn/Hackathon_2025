@@ -15,6 +15,21 @@ It provides clear, interactive dashboards to support decision-making for departm
 
 ---
 
+## Pages
+- **Main Dashboard**
+
+  <img width="1920" height="959" alt="image" src="https://github.com/user-attachments/assets/567c6c6e-14e9-4965-b9f4-6c5fbc47189b" />
+ 
+- **Department Details**
+
+  <img width="1920" height="959" alt="image" src="https://github.com/user-attachments/assets/ed7af1b1-4411-40ff-84e1-013927e85118" />
+
+- **Predict High Tickets**
+
+  <img width="1920" height="959" alt="image" src="https://github.com/user-attachments/assets/ed5ff95f-cf6e-4542-ae79-c6218c13dd69" />
+
+---
+
 ## Main Features
 - **Central Dashboard**:
   - Total number of requests in a selected date range.
