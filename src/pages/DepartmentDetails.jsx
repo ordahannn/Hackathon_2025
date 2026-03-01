@@ -11,6 +11,22 @@ import OverduePieChart from "../components/moked-analytics/OverduePieChart";
 import TopEmployeesList from "../components/moked-analytics/TopEmployeesList";
 import EmployeesPerformanceTable from "../components/moked-analytics/EmployeesPerformanceTable";
 
+// ---- DATE CONFIG ----
+// Set USE_TODAY to true to always use today's
+// Set USE_TODAY to false to use DEMO_END_DATE
+const USE_TODAY = false;
+const DEMO_END_DATE = '2025-02-28';
+
+// Function to generate the date range for the last six months
+const getHalfYearRange = () => {
+  const end = USE_TODAY ? new Date() : new Date(DEMO_END_DATE);
+  const start = new Date(end);
+  start.setMonth(end.getMonth() - 5);
+  return {
+    startDate: start.toISOString().slice(0, 10),
+    endDate: end.toISOString().slice(0, 10),
+  };
+};
 const DepartmentDetails = () => {
   const { departmentName } = useParams();
   const navigate = useNavigate();
@@ -59,7 +75,7 @@ const DepartmentDetails = () => {
   useEffect(() => {
     if (selectedSubDepartment) {
       const startDate = "2023-10-01"; // אפשר לחשב חצי שנה אחורה דינאמית אם תרצי
-      const endDate = new Date().toISOString().slice(0, 10);
+      const endDate = USE_TODAY ? new Date() : new Date(DEMO_END_DATE).toISOString().slice(0, 10);
 
       getEmployeesPerformanceTable(departmentName, selectedSubDepartment, startDate, endDate)
         .then((data) => {

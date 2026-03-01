@@ -2,12 +2,29 @@ import { useEffect, useState } from "react";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import { getMonthlyTicketsAndOverdues } from "../../api";
 
+// ---- DATE CONFIG ----
+// Set USE_TODAY to true to always use today's
+// Set USE_TODAY to false to use DEMO_END_DATE
+const USE_TODAY = false;
+const DEMO_END_DATE = '2025-02-28';
+
+// Function to generate the date range for the last six months
+const getHalfYearRange = () => {
+  const end = USE_TODAY ? new Date() : new Date(DEMO_END_DATE);
+  const start = new Date(end);
+  start.setMonth(end.getMonth() - 5);
+  return {
+    startDate: start.toISOString().slice(0, 10),
+    endDate: end.toISOString().slice(0, 10),
+  };
+};
+
 const MokedMonthlyTicketsChart = () => {
   const [data, setData] = useState([]);
 
   const generateLastSixMonths = () => {
     const result = [];
-    const today = new Date();
+    const today = USE_TODAY ? new Date() : new Date(DEMO_END_DATE);
 
     for (let i = 5; i >= 0; i--) {
       const d = new Date(today.getFullYear(), today.getMonth() - i, 1);
