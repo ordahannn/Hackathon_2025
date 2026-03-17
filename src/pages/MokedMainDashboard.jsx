@@ -54,7 +54,7 @@ const MokedMainDashboard = () => {
 
   return (
     <div className="w-full h-full flex-1 overflow-auto relative z-10 text-center">
-      <Header title= "MokedView" />
+      <Header />
 
       <main className="max-w-7xl mx-auto py-6 px-4 lg:px-8 text-center">
         {/* Stat Cards Section */}
